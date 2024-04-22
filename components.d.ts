@@ -9,9 +9,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
-    'Icon:bx:bxMoon': typeof import('~icons/bx/bx-moon')['default']
-    'Icon:bx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
-    'IconAkarIcons:githubFill': typeof import('~icons/akar-icons/github-fill')['default']
     MenuBar: typeof import('./src/components/MenuBar.vue')['default']
     MenuItem: typeof import('./src/components/MenuItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

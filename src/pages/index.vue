@@ -1,10 +1,9 @@
 <script setup>
-	import maa from '@/assets/maa-gss.jpg';
-	import slide from '@/assets/gss-slide.jpg';
-	import slide2 from '@/assets/slide4.jpg';
+	import slide from '@/assets/slide1.jpg';
+	import slide2 from '@/assets/slide2.jpg';
 	import slide3 from '@/assets/slide3.jpg';
 	useHead({
-		title: 'GSS Girls PG College, Chirawa',
+		title: 'Shri Karni Girls College',
 	});
 	onMounted(async () => {
 		const { Carousel, initTWE } = await import("tw-elements");
@@ -60,7 +59,7 @@
 				alt="..." />
 			<div
 				class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Ginnidevi Satyanarayan Sekhsaria Girls' PG College</h5>
+				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">श्री करणी कन्या महाविद्यालय, नंगली सलेदी सिंह </h5>
 				<p class="font-bold">
 				Affiliated to the PDU Shekhawati University, Sikar
 				</p>
@@ -77,7 +76,7 @@
 				alt="..." />
 			<div
 				class="absolute inset-x-[15%] bottom-10 hidden py-5 text-center text-white md:block">
-				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Accredited B++ by NAAC</h5>
+				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Award Function </h5>
 				
 			</div>
 			</div>
@@ -92,7 +91,7 @@
 				alt="..." />
 			<div
 				class="absolute inset-x-[15%] bottom-10 hidden py-5 text-center text-white md:block">
-				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Accredited B++ by NAAC</h5>
+				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]"></h5>
 			</div>
 			</div>
 		</div>

@@ -29,8 +29,7 @@ const toggleMobileMenu = () => {
 <template>
 	<header>
 		<div class="bg-gray-400 flex items-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<img :src="logo" class="h-28 p-2" />
-			<h2 class="text-4xl p-3 text-orange-800 pl-8 font-bold">GSS Girls' PG College, Chirawa</h2>
+			<h2 class="text-4xl p-3 text-orange-800 pl-8 font-bold">Shri Karni Girls College</h2>
 		</div>
 		<nav class="bg-gray-800">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

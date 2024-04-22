@@ -1,18 +1,6 @@
 <script setup>
 const management = ref([
-    {name: 'Shri Anuj Shekhsaria', subject: 'President'},
-    {name: 'Shri S.L.Sharma', subject: 'Secretary'},
-    {name: 'Dr. Sunita Sharma', subject: 'Principal'},
-    {name: 'Shri Satish Chandra Sharma', subject: 'Treasurer'},
-    {name: 'Dr. Seema Sahal', subject: 'Member (Staff Representative)'},
-    {name: 'Dr. N.L.Arrawatia', subject: 'Member (Educationist)'},
-    {name: 'Shri Bhagwana Ram Saini', subject: 'Member (Educationist)'},
-    {name: 'Smt. Bala Bajaj', subject: 'Member (Students\' Gaurdian)'},
-    {name: 'Dr. Madhubala Bajaj', subject: 'Member (Alumnus)'},
-    {name: 'Shri Mahesh Malani', subject: 'Member'},
-    {name: 'Shri Prabhu Dayal Nayak', subject: 'Member'},
-    {name: 'Shri Vipul Mahamia', subject: 'Member'},
-    {name: 'Shri Satyanarayan Chaudhary', subject: 'Member'},
+    
 ])
 </script>
 <template>

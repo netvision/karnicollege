@@ -1,7 +1,7 @@
 <script setup>
 import { GoogleMap, Marker } from 'vue3-google-map'
 const mapApi = ref(import.meta.env.VITE_MAPKEY)
-const center = { lat: 28.23719, lng: 75.64652 }
+const center = { lat: 27.999718, lng: 75.654936 }
 </script>
 <template>
     <AppHeader />
@@ -15,10 +15,8 @@ const center = { lat: 28.23719, lng: 75.64652 }
         <Marker :options="{ position: center, label: 'GSS', title: 'GSS Girls\' PG College' }" />
     </GoogleMap>
     <h2 class="text-2xl p-2 px-8 border-b-2">Contact Info:</h2>
-    <p class="text-lg font-bold px-8">Ginnidevi Satyanarayan Shekhsaria Girls' PG College</p>
-    <p class="text-lg px-8">Chirawa - 333026, Jhunjhunu, Rajasthan.</p>
-    <p class="text-lg px-8">Phone: 01596-220289</p>
-    <p class="text-lg px-8">WhatsApp: 7878306013</p>
+    <p class="text-lg font-bold px-8">श्री करणी कन्या महाविद्यालय,  </p>
+    <p class="text-lg px-8">नंगली सलेदी सिंह, Jhunjhunu, Rajasthan.</p>
     </div>
     <Footer />
 </template>
