@@ -12,11 +12,11 @@ const center = { lat: 27.999718, lng: 75.654936 }
     :center="center"
     :zoom="16"
     >
-        <Marker :options="{ position: center, label: 'GSS', title: 'GSS Girls\' PG College' }" />
+        <Marker :options="{ position: center, label: 'K', title: 'Shri Karni Girls College' }" />
     </GoogleMap>
     <h2 class="text-2xl p-2 px-8 border-b-2">Contact Info:</h2>
     <p class="text-lg font-bold px-8">श्री करणी कन्या महाविद्यालय,  </p>
-    <p class="text-lg px-8">नंगली सलेदी सिंह, Jhunjhunu, Rajasthan.</p>
+    <p class="text-lg px-8">नंगली सलेदी सिंह, झुंझुनू, राजस्थान।</p>
     </div>
     <Footer />
 </template>

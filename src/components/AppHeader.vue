@@ -7,8 +7,8 @@ const menuItems = [
           subMenu: [
             { label: 'Introduction', url: '/intro' },
 			{ label: 'Managing Committee', url: '/management' },
-			{ label: 'Admission Info', url: '/admissions' },
-			{ label: 'Courses Offered', url: '/courses' },
+			{ label: 'Land Conversion', url: '/land' },
+			{ label: 'Society Registeration Certificate', url: '/society' },
 			{ label: 'Other Info', url: '/info' }
           ],
           showArrow: true
@@ -29,7 +29,7 @@ const toggleMobileMenu = () => {
 <template>
 	<header>
 		<div class="bg-gray-400 flex items-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<h2 class="text-4xl p-3 text-orange-800 pl-8 font-bold">Shri Karni Girls College</h2>
+			<h2 class="text-4xl p-3 text-orange-800 pl-8 font-bold">श्री करणी कन्या महाविद्यालय</h2>
 		</div>
 		<nav class="bg-gray-800">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
