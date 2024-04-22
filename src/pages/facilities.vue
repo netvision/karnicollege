@@ -1,0 +1,4 @@
+<template>
+    <AppHeader />
+    <Footer />
+</template>
