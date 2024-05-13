@@ -177,15 +177,15 @@ const nonStaff = ref([
             <tr>
               <th scope="col" class="px-6 py-4">#</th>
               <th scope="col" class="px-6 py-4">Name</th>
-              <th scope="col" class="px-6 py-4">Designation</th>
               <th scope="col" class="px-6 py-4">Subject</th>
+              <th scope="col" class="px-6 py-4">Qualification</th>
               <th scope="col" class="px-6 py-4">DoJ</th>
-              <th scope="col" class="px-6 py-4">Aadhar</th>
               <th scope="col" class="px-6 py-4">PAN</th>
+              <th scope="col" class="px-6 py-4">Aadhar</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(s, i) in staff" :key="i" 
+            <tr v-for="(s, i) in staff" :key="i"
               class="border-b border-neutral-200 bg-black/[0.02] dark:border-white/10">
               <td class="whitespace-nowrap px-6 py-4">{{ i+1 }}</td>
               <td class="whitespace-nowrap px-6 py-4">{{ s["name"] }}</td>
@@ -195,7 +195,7 @@ const nonStaff = ref([
               <td class="whitespace-nowrap px-6 py-4">{{ s["aadhar"] }}</td>
               <td class="whitespace-nowrap px-6 py-4">{{ s["pan"] }}</td>
             </tr>
-            
+
           </tbody>
         </table>
     </div>

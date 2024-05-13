@@ -2,6 +2,8 @@
 	import slide from '@/assets/slide1.jpg';
 	import slide2 from '@/assets/slide2.jpg';
 	import slide3 from '@/assets/slide3.jpg';
+	import slide4 from '@/assets/slide4.jpg';
+
 	useHead({
 		title: 'Shri Karni Girls College',
 	});
@@ -42,6 +44,13 @@
 			data-twe-slide-to="2"
 			class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
 			aria-label="Slide 3"></button>
+			<button
+			type="button"
+			data-twe-target="#carouselExampleCaptions"
+			data-twe-slide-to="3"
+			class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+			aria-label="Slide 4"></button>
+
 		</div>
 
 		<!--Carousel items-->
@@ -77,7 +86,7 @@
 			<div
 				class="absolute inset-x-[15%] bottom-10 hidden py-5 text-center text-white md:block">
 				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Award Function </h5>
-				
+
 			</div>
 			</div>
 			<!--Third item-->
@@ -87,6 +96,20 @@
 			style="backface-visibility: hidden">
 			<img
 				:src="slide3"
+				class="block w-full"
+				alt="..." />
+			<div
+				class="absolute inset-x-[15%] bottom-10 hidden py-5 text-center text-white md:block">
+				<h5 class="text-3xl text-orange-900 font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]"></h5>
+			</div>
+			</div>
+			<!--Fourth item-->
+			<div
+			class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+			data-twe-carousel-item
+			style="backface-visibility: hidden">
+			<img
+				:src="slide4"
 				class="block w-full"
 				alt="..." />
 			<div
