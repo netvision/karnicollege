@@ -5,11 +5,12 @@ const menuItems = [
         {
           label: 'About Us',
           subMenu: [
-            { label: 'Introduction', url: '/intro' },
+            { label: 'Secretary\'s Message', url: '/intro' },
+			{ label: 'Principal\'s Message', url: '/info' },
 			{ label: 'Managing Committee', url: '/management' },
 			{ label: 'Land Conversion', url: '/land' },
 			{ label: 'Society Registeration Certificate', url: '/society' },
-			{ label: 'Other Info', url: '/info' }
+
           ],
           showArrow: true
         },
