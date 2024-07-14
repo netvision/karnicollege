@@ -25,6 +25,13 @@
 		"serve": "vite preview",
 		"https-preview": "serve dist"
 	},
+	"browserslist": [
+		"defaults",
+		"not IE 11",
+		"last 2 versions",
+		"supports es6-module",
+		"supports top-level-await"
+		],
 	"dependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/forms": "^0.5.2",
