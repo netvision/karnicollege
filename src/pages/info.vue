@@ -1,9 +1,12 @@
+<script setup>
+import principal from '../assets/principal.jpg'
+</script>
 <template>
     <AppHeader />
 	<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div class="grid grid-cols-3 gap-4">
 			<div>
-			<img src="principal.jpg" class="rounded h-64 p-2 border-2 m-2" />
+			<img :src="principal" class="rounded h-64 p-2 border-2 m-2" />
 			</div>
 			<div class="col-span-2 text-lg mb-14">
 			<p class="text-2xl"> प्राचार्य की कलम से........ ✍</p>

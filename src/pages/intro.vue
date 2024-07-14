@@ -1,9 +1,12 @@
+<script setup>
+import secretary from '../assets/secretary.jpeg'
+</script>
 <template>
     <AppHeader />
 	<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div class="grid grid-cols-3 gap-4">
 			<div>
-			<img src="secretary.jpeg" class="rounded h-64 p-2 border-2 m-2" />
+			<img :src="secretary" class="rounded h-64 p-2 border-2 m-2" />
 			</div>
 			<div class="col-span-2 text-lg">
 			<p>प्रिय युवा मन,</p>
