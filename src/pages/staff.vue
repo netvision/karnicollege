@@ -47,7 +47,9 @@ const staff = ref([
   "name": "DR. POONAM SHARMA",
   "subject": "PHYSICS",
   "qualification": "PH.D",
-  "aadhar": "CXDPS9785E"
+  "doj": "02\/07\/2021",
+  "aadhar": "CXDPS9785E",
+  "pan": "3473 1598 6795"
  },
  {
   "sno": 4,
@@ -143,6 +145,7 @@ const staff = ref([
   "sno": 17,
   "name": "NAWAL SINGH SHEKHAWAT",
   "subject": "LDC",
+  "qualification": "M.A.",
   "doj": "01\/07\/2022",
   "aadhar": "KAVPS5348A",
   "pan": "3511 6134 4351"
@@ -152,12 +155,15 @@ const staff = ref([
   "name": "RENU JANGIR",
   "subject": "LAB ASST",
   "qualification": "M.SC",
-  "doj": "01\/07\/2023"
+  "doj": "01\/07\/2023",
+  "aadhar": "CBWPJ1608L",
+  "pan": "7179 9408 4861"
  },
  {
   "sno": 19,
   "name": "KULDEEP SHARMA",
   "subject": "UDC",
+  "qualification": "M.A.",
   "doj": "01\/01\/2015",
   "aadhar": "EWWPS8924K",
   "pan": "5471 3366 2280"
