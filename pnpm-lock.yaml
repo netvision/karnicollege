@@ -14,9 +14,6 @@ dependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.4
     version: 0.5.13(tailwindcss@3.4.4)
-  '@tato30/vue-pdf':
-    specifier: ^1.9.6
-    version: 1.10.0(vue@3.4.31)
   '@types/node':
     specifier: ^18.0.4
     version: 18.19.39
@@ -50,6 +47,9 @@ dependencies:
   vue-i18n:
     specifier: ^9.1.10
     version: 9.13.1(vue@3.4.31)
+  vue-pdf-embed:
+    specifier: ^2.0.4
+    version: 2.0.4(vue@3.4.31)
   vue-router:
     specifier: ^4.1.2
     version: 4.4.0(vue@3.4.31)
@@ -1732,18 +1732,6 @@ packages:
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.4
-    dev: false
-
-  /@tato30/vue-pdf@1.10.0(vue@3.4.31):
-    resolution: {integrity: sha512-GYJGI+O5tC0cPqS95qevlJ9TWbv4tErnK5QwRsdSq2cjqA+SpRcnvawH5psG/ay9EYeME8bRrk4uJOqKLYsEVA==}
-    peerDependencies:
-      vue: ^3.2.33
-    dependencies:
-      pdfjs-dist: 4.2.67
-      vue: 3.4.31(typescript@4.9.5)
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
     dev: false
 
   /@tootallnate/once@2.0.0:
@@ -4543,8 +4531,8 @@ packages:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
     dev: true
 
-  /pdfjs-dist@4.2.67:
-    resolution: {integrity: sha512-rJmuBDFpD7cqC8WIkQUEClyB4UAH05K4AsyewToMTp2gSy3Rrx8c1ydAVqlJlGv3yZSOrhEERQU/4ScQQFlLHA==}
+  /pdfjs-dist@4.4.168:
+    resolution: {integrity: sha512-MbkAjpwka/dMHaCfQ75RY1FXX3IewBVu6NGZOcxerRFlaBiIkZmUoR0jotX5VUzYZEXAGzSFtknWs5xRKliXPA==}
     engines: {node: '>=18'}
     optionalDependencies:
       canvas: 2.11.2
@@ -5961,6 +5949,18 @@ packages:
       '@intlify/shared': 9.13.1
       '@vue/devtools-api': 6.6.3
       vue: 3.4.31(typescript@4.9.5)
+
+  /vue-pdf-embed@2.0.4(vue@3.4.31):
+    resolution: {integrity: sha512-TO/sM+Ljvtbdnxsjvln7PAX6hJ+DuNXiDwrh93JDH1QUY+e37NijYJS2R4BYdLJR/hKj2evt1os85YNW6TxDCw==}
+    peerDependencies:
+      vue: ^3.3.0
+    dependencies:
+      pdfjs-dist: 4.4.168
+      vue: 3.4.31(typescript@4.9.5)
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: false
 
   /vue-router@4.4.0(vue@3.4.31):
     resolution: {integrity: sha512-HB+t2p611aIZraV2aPSRNXf0Z/oLZFrlygJm+sZbdJaW6lcFqEDQwnzUBXn+DApw+/QzDU/I9TeWx9izEjTmsA==}
