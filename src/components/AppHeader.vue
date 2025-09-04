@@ -1,23 +1,23 @@
 <script setup>
 import logo from '@/assets/logo.png'
 const menuItems = [
-				{ label: 'Home', url: '/' },
-				{
-					label: 'About Us',
-					subMenu: [
-						{ label: 'Secretary\'s Message', url: '/intro' },
-						{ label: 'Principal\'s Message', url: '/info' },
-						{ label: 'Managing Committee', url: '/management' },
-						{ label: 'Land Conversion', url: '/land' },
-						{ label: 'Society Registeration Certificate', url: '/society' },
-					],
-					showArrow: true
-				},
-				{ label: 'Principal & Staff', url: '/staff' },
-				{ label: 'Facilities', url: '/facilities' },
-				{ label: 'Photo Gallery', url: '/gallery' },
-				{ label: 'Documents', url: '/documents' },
-				{ label: 'Contact', url: '/contact' },
+						{ label: 'Home', url: '/' },
+						{
+							label: 'About Us',
+							subMenu: [
+								{ label: 'Secretary\'s Message', url: '/intro' },
+								{ label: 'Principal\'s Message', url: '/info' },
+								{ label: 'Managing Committee', url: '/management' },
+								{ label: 'Land Conversion', url: '/land' },
+								{ label: 'Society Registeration Certificate', url: '/society' },
+							],
+							showArrow: true
+						},
+						{ label: 'Principal & Staff', url: '/staff' },
+						{ label: 'Facilities', url: '/facilities' },
+						{ label: 'Photo Gallery', url: '/gallery' },
+						{ label: 'Documents', url: '/documents' },
+						{ label: 'Contact', url: '/contact' },
       ]
 
 	  const mobileMenuOpen = ref(false);
