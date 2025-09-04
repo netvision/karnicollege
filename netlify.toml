@@ -1,0 +1,3 @@
+# Netlify configuration to use Node 20 for builds
+[build]
+environment = { NODE_VERSION = "20.11.1" }
