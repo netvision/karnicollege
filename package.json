@@ -1,5 +1,6 @@
 {
 	"name": "@zynth/vitailse",
+	"type": "module",
 	"description": "Vite starter template with TailwindCSS",
 	"version": "0.1.0",
 	"main": "src/main.ts",

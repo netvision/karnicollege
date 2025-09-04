@@ -1,4 +1,9 @@
-module.exports = {
+import forms from '@tailwindcss/forms'
+import aspectRatio from '@tailwindcss/aspect-ratio'
+import typography from '@tailwindcss/typography'
+import twElements from 'tw-elements/plugin.cjs'
+
+export default {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', "./node_modules/tw-elements/js/**/*.js"],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
@@ -101,9 +106,9 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [
-		require('@tailwindcss/forms'),
-		require('@tailwindcss/aspect-ratio'),
-		require('@tailwindcss/typography'),
-		require("tw-elements/plugin.cjs")
+		forms,
+		aspectRatio,
+		typography,
+		twElements
 	],
 };
