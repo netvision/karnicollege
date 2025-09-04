@@ -3,6 +3,7 @@ import slide from '@/assets/slide1.jpg';
 import slide2 from '@/assets/slide2.jpg';
 import slide3 from '@/assets/slide3.jpg';
 import slide4 from '@/assets/slide4.jpg';
+import { useHead } from '@unhead/vue';
 
 useHead({
 	title: 'Shri Karni Girls College - Excellence in Education',

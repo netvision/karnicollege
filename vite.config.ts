@@ -10,15 +10,15 @@ import { VitePWA } from 'vite-plugin-pwa';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import generateSitemap from 'vite-ssg-sitemap';
 import VueRouter from 'unplugin-vue-router/vite';
-import { VueRouterExports } from 'unplugin-vue-router';
+import { VueRouterAutoImports } from 'unplugin-vue-router';
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		vue(),
 		VueRouter({
 			dts: true,
 			routesFolder: 'src/pages',
 		}),
+		vue(),
 		Components({
 			dts: true,
 			resolvers: [
@@ -42,10 +42,9 @@ export default defineConfig({
 			imports: [
 				// presets
 				'vue',
-				{ '@vue-router': VueRouterExports },
+				VueRouterAutoImports,
 				// 'vue-i18n',
 				'@vueuse/core',
-				'@vueuse/head',
 				// custom
 			],
 
@@ -54,39 +53,39 @@ export default defineConfig({
 			resolvers: [],
 		}),
 		Layouts(),
-		VitePWA({
-			includeAssets: [
-				'favicon-16x16.png',
-				'favicon-32x32.png',
-				'favicon.ico',
-				'robots.txt',
-				'apple-touch-icon.png',
-			],
-			manifest: {
-				name: 'Vitailse',
-				short_name: 'Vitailse',
-				description: 'Opinionated vite template with TailwindCSS',
-				theme_color: '#076AE0',
-				icons: [
-					{
-						src: 'pwa-192x192.png',
-						sizes: '192x192',
-						type: 'image/png',
-					},
-					{
-						src: 'pwa-512x512.png',
-						sizes: '512x512',
-						type: 'image/png',
-					},
-					{
-						src: 'pwa-512x512.png',
-						sizes: '512x512',
-						type: 'image/png',
-						purpose: 'any maskable',
-					},
-				],
-			},
-		}),
+		// VitePWA({
+		// 	includeAssets: [
+		// 		'favicon-16x16.png',
+		// 		'favicon-32x32.png',
+		// 		'favicon.ico',
+		// 		'robots.txt',
+		// 		'apple-touch-icon.png',
+		// 	],
+		// 	manifest: {
+		// 		name: 'Vitailse',
+		// 		short_name: 'Vitailse',
+		// 		description: 'Opinionated vite template with TailwindCSS',
+		// 		theme_color: '#076AE0',
+		// 		icons: [
+		// 			{
+		// 				src: 'pwa-192x192.png',
+		// 				sizes: '192x192',
+		// 				type: 'image/png',
+		// 			},
+		// 			{
+		// 				src: 'pwa-512x512.png',
+		// 				sizes: '512x512',
+		// 				type: 'image/png',
+		// 			},
+		// 			{
+		// 				src: 'pwa-512x512.png',
+		// 				sizes: '512x512',
+		// 				type: 'image/png',
+		// 				purpose: 'any maskable',
+		// 			},
+		// 		],
+		// 	},
+		// }),
 		// VueI18n({
 		// 	runtimeOnly: true,
 		// 	compositionOnly: true,
@@ -110,7 +109,7 @@ export default defineConfig({
 		},
 	},
 	optimizeDeps: {
-		include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+		include: ['vue', 'vue-router', '@vueuse/core', '@unhead/vue'],
 	},
 	// @ts-ignore
 	ssgOptions: {

@@ -1,5 +1,6 @@
 <script setup>
 import { GoogleMap, Marker } from 'vue3-google-map'
+import { useHead } from '@unhead/vue'
 
 useHead({
 	title: 'Contact Us - Shri Karni Girls College',

@@ -1,4 +1,6 @@
 <script setup>
+import { useHead } from '@unhead/vue'
+
 useHead({
 	title: 'Courses - Shri Karni Girls College',
 	meta: [

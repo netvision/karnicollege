@@ -6,6 +6,7 @@ import physics from '@/assets/physics.jpg'
 import geography from '@/assets/geography.jpg'
 import computer from '@/assets/computer.jpg'
 import zoology from '@/assets/zoology.jpg'
+import { useHead } from '@unhead/vue'
 
 useHead({
 	title: 'Facilities - Shri Karni Girls College',

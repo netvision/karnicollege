@@ -1,5 +1,6 @@
 <script setup>
 import secretary from '../assets/secretary.jpeg'
+import { useHead } from '@unhead/vue'
 
 useHead({
 	title: 'Secretary\'s Message - Shri Karni Girls College',
