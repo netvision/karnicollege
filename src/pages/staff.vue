@@ -1,7 +1,6 @@
 <script setup>
 const staff = ref([
  {
-  "sno": 1,
   "name": "DR. SANDEEP JANGIR",
   "subject": "GEOGRAPHY",
   "qualification": "PH.D",
@@ -10,7 +9,6 @@ const staff = ref([
   "pan": "5707 8363 7811"
  },
  {
-  "sno": 2,
   "name": "DR. SANGEETA KUMARI",
   "subject": "HINDI",
   "qualification": "PH.D, SET",
@@ -19,7 +17,6 @@ const staff = ref([
   "pan": "3191 4819 6460"
  },
  {
-  "sno": 3,
   "name": "DR. RITU RAJ",
   "subject": "HISTORY",
   "qualification": "PH.D,NET, SET",
@@ -52,16 +49,6 @@ const staff = ref([
   "pan": "3473 1598 6795"
  },
  {
-  "sno": 4,
-  "name": "ANJU SAINI",
-  "subject": "HINDI",
-  "qualification": "NET",
-  "doj": "01\/01\/2019",
-  "aadhar": "JBJPS3151R",
-  "pan": "4649 7175 9350"
- },
- {
-  "sno": 5,
   "name": "PRIYANKA",
   "subject": "CHEMISTRY",
   "qualification": "NET",
@@ -70,7 +57,6 @@ const staff = ref([
   "pan": "5031 5939 1572"
  },
  {
-  "sno": 8,
   "name": "BEENA KUMAWAT",
   "subject": "BOTANY",
   "qualification": "M.SC",
@@ -79,7 +65,6 @@ const staff = ref([
   "pan": "7201 8974 3073"
  },
  {
-  "sno": 9,
   "name": "KARISHMA TANWAR",
   "subject": "H - SCIENCE",
   "qualification": "M.SC",
@@ -88,7 +73,6 @@ const staff = ref([
   "pan": "3527 7872 1659"
  },
  {
-  "sno": 10,
   "name": "MUNESH KUMARI",
   "subject": "POL. SCIENCE",
   "qualification": "M.A",
@@ -97,7 +81,6 @@ const staff = ref([
   "pan": "9243 5857 7960"
  },
  {
-  "sno": 11,
   "name": "RAMSINGH",
   "subject": "ENGLISH",
   "qualification": "M.A",
@@ -106,25 +89,14 @@ const staff = ref([
   "pan": "3468 3939 4759"
  },
  {
-  "sno": 12,
-  "name": "CHANDGI RAM",
+  "name": "SARITA JANGIR",
   "subject": "GEOGRAPHY",
   "qualification": "NET",
-  "doj": "01\/09\/2021",
-  "aadhar": "BEJPR2786E",
-  "pan": "4541 7813 7075"
+  "doj": "05\/09\/2024",
+  "aadhar": "DNQPS8093K",
+  "pan": "9540 1252 0204"
  },
  {
-  "sno": 13,
-  "name": "PREETI KUMARI",
-  "subject": "GEOGRAPHY",
-  "qualification": "M.A",
-  "doj": "26\/02\/2021",
-  "aadhar": "FDHPP1696G",
-  "pan": "3746 7482 8576"
- },
- {
-  "sno": 15,
   "name": "BHARAT SINGH",
   "subject": "SOCIOLOGY",
   "qualification": "M.A",
@@ -133,7 +105,6 @@ const staff = ref([
   "pan": "6190 5219 1416"
  },
  {
-  "sno": 16,
   "name": "MAHESH KUMAR SAINI",
   "subject": "ELE. COMPUTER",
   "qualification": "PGDCA",
@@ -142,25 +113,22 @@ const staff = ref([
   "pan": "5684 0121 7292"
  },
  {
-  "sno": 17,
-  "name": "NAWAL SINGH SHEKHAWAT",
+  "name": "VANDANA SHARMA",
   "subject": "LDC",
   "qualification": "M.A.",
-  "doj": "01\/07\/2022",
-  "aadhar": "KAVPS5348A",
-  "pan": "3511 6134 4351"
+  "doj": "01\/07\/2025",
+  "aadhar": "PETPS1742K",
+  "pan": "6789 5505 9868"
  },
  {
-  "sno": 18,
-  "name": "RENU JANGIR",
-  "subject": "LAB ASST",
-  "qualification": "M.SC",
-  "doj": "01\/07\/2023",
-  "aadhar": "CBWPJ1608L",
-  "pan": "7179 9408 4861"
+  "name": "PINKU KUMARI",
+  "subject": "LAB. ASST.",
+  "qualification": "M.SC.",
+  "doj": "01\/07\/2025",
+  "aadhar": "QJQPK8751D",
+  "pan": "6584 9595 7964"
  },
  {
-  "sno": 19,
   "name": "KULDEEP SHARMA",
   "subject": "UDC",
   "qualification": "M.A.",
@@ -173,7 +141,6 @@ const nonStaff = ref([
 ])
 </script>
 <template>
-    <AppHeader />
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <h2 class="text-2xl p-2 px-8 border-b-2">Principal and Teaching Staff</h2>
         <table
@@ -205,5 +172,4 @@ const nonStaff = ref([
           </tbody>
         </table>
     </div>
-    <Footer />
 </template>

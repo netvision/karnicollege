@@ -1,12 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppHeader from '@/components/AppHeader.vue'
+import Footer from '@/components/Footer.vue'
+</script>
 <template>
 	<header>
-		<app-header />
+		<AppHeader />
 	</header>
 
 	<main
 		class="
-			p-8
 			dark:bg-gray-800 dark:text-white
 			bg-white
 			text-gray-800
@@ -15,4 +17,8 @@
 	>
 		<router-view />
 	</main>
+
+	<footer>
+		<Footer />
+	</footer>
 </template>

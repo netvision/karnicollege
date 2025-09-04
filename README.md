@@ -75,11 +75,11 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 - [`vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
   - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
 - [VS Code Extensions](./.vscode/extensions.json)
-  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
-  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
-  - [TailwindCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - IDE support for Tailwind CSS
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
+  - [Vite](https://marketplace.visualstudio.com/items?itemname=antfu.vite) - Fire up Vite server automatically
+  - [Volar](https://marketplace.visualstudio.com/items?itemname=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemname=antfu.iconify) - Icon inline display and autocomplete
+  - [TailwindCSS Intellisense](https://marketplace.visualstudio.com/items?itemname=bradlc.vscode-tailwindcss) - IDE support for Tailwind CSS
+  - [i18n Ally](https://marketplace.visualstudio.com/items?itemname=lokalise.i18n-ally) - All in one i18n support
 ## Try it now!
 ### GitHub Template
 
@@ -107,31 +107,3 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Clean up the READMEs and remove routes
 
 And, enjoy :)
-
-## Usage
-
-### Development
-
-Just run and visit http://localhost:3000
-
-```bash
-pnpm dev
-```
-
-### Preview in Https
-
-Just run and visit https://localhost
-
-```bash
-pnpm build && pnpm run https-preview
-```
-
-### Build
-
-To build the App, run
-
-```bash
-pnpm build
-```
-
-And you will see the generated file in `dist` that ready to be served.

@@ -1,17 +1,166 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @tailwind base;
-@layer base {
-    html {
-      @apply text-surface;
-      @apply bg-white;
-    }
-    html.dark {
-      @apply text-neutral-50;
-      @apply bg-body-dark;
-    }
-  }
 @tailwind components;
 @tailwind utilities;
-p {
-    @apply leading-[1.6];
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-semibold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+
+  p {
+    @apply leading-relaxed text-neutral-700;
+  }
+}
+
+@layer components {
+  /* Modern Button Styles */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-600 to-primary-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary-700 border-2 border-primary-300 font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg hover:bg-primary-50 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-200;
+  }
+
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent-500 to-accent-600 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-accent-300;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-100;
+  }
+
+  .card-hover {
+    @apply hover:transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Section Styles */
+  .section {
+    @apply py-16 lg:py-24;
+  }
+
+  .section-gray {
+    @apply bg-neutral-100;
+  }
+
+  .section-primary {
+    @apply bg-gradient-to-br from-primary-50 to-primary-100;
+  }
+
+  /* Navigation Styles */
+  .nav-link {
+    @apply text-neutral-700 hover:text-primary-600 font-medium transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-200;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Hero Styles */
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-40;
+  }
+
+  /* Animation Classes */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .bounce-in {
+    animation: bounceIn 0.8s ease-out;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .backdrop-blur-glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+}
+
+/* Responsive Design Helpers */
+@media (max-width: 768px) {
+  .hero-text {
+    @apply text-3xl;
+  }
+
+  .section {
+    @apply py-12;
+  }
+}

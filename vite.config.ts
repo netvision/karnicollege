@@ -43,7 +43,7 @@ export default defineConfig({
 				// presets
 				'vue',
 				{ '@vue-router': VueRouterExports },
-				'vue-i18n',
+				// 'vue-i18n',
 				'@vueuse/core',
 				'@vueuse/head',
 				// custom
@@ -87,12 +87,18 @@ export default defineConfig({
 				],
 			},
 		}),
-		VueI18n({
-			runtimeOnly: true,
-			compositionOnly: true,
-			include: [resolve(__dirname, 'locales/**')],
-		}),
+		// VueI18n({
+		// 	runtimeOnly: true,
+		// 	compositionOnly: true,
+		// 	include: [resolve(__dirname, 'locales/**')],
+		// }),
 	],
+	define: {
+		__VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
+		__VUE_PROD_DEVTOOLS__: 'false',
+		__VUE_OPTIONS_API__: 'true',
+		__VUE_PROD_MINIFY__: 'true'
+	},
 	resolve: {
 		alias: {
 			'@': resolve(__dirname, './src'),

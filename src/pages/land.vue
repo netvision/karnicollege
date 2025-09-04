@@ -5,12 +5,10 @@ import VuePdfEmbed from 'vue-pdf-embed'
 const pdfSource = 'land.pdf'
 </script>
 <template>
-    <AppHeader />
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <h2 class="text-2xl p-2 px-8 border-b-2">भूमि संपरिवर्तन आदेश</h2>
         <VuePdfEmbed annotation-layer text-layer :source="pdfSource" />
     </div>
-    <Footer />
 </template>
 <style scoped>
 .vue-pdf-embed__page{position:relative}.vue-pdf-embed__page canvas{display:block}

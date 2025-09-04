@@ -8,66 +8,189 @@ import ph6 from '@/assets/ph6.jpg'
 import ph7 from '@/assets/ph7.jpg'
 import ph8 from '@/assets/ph8.jpg'
 import ph10 from '@/assets/ph10.jpg'
+import slide1 from '@/assets/slide1.jpg'
+import slide2 from '@/assets/slide2.jpg'
+import slide3 from '@/assets/slide3.jpg'
+import slide4 from '@/assets/slide4.jpg'
+import slide5 from '@/assets/slide5.jpg'
+
+useHead({
+	title: 'Gallery - Shri Karni Girls College',
+	meta: [
+		{ name: 'description', content: 'Photo gallery showcasing Shri Karni Girls College campus and activities.' }
+	]
+});
 </script>
+
 <template>
-    <AppHeader />
-    <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph1" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph2" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph3" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph4" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph5" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph6" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph7" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph8" />
-            </div>
-            <div class="w-full p-1 md:p-2">
-                <img
-                alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
-                :src="ph10" />
-            </div>
-        </div>
-    </div>
-    <Footer />
+	<div class="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100">
+		<!-- Main Content -->
+		<section class="py-12 md:py-16">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+						Photo <span class="text-purple-600">Gallery</span>
+					</h1>
+					<div class="w-24 h-1 bg-purple-600 mx-auto rounded-full"></div>
+				</div>
+
+				<!-- Gallery Grid -->
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph1"
+								alt="College Campus"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph2"
+								alt="Academic Building"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph3"
+								alt="Student Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph4"
+								alt="Library"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph5"
+								alt="Science Lab"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph6"
+								alt="Cultural Event"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph7"
+								alt="Sports Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph8"
+								alt="College Event"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph10"
+								alt="College Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="slide1"
+								alt="College Entrance"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="slide2"
+								alt="College Event"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="slide3"
+								alt="College Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="slide4"
+								alt="College Campus"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="slide5"
+								alt="College Garden"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 </template>
