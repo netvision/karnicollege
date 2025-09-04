@@ -7,8 +7,9 @@ useHead({
 });
 </script>
 
+
 <template>
-	<div class="min-h-screen bg-gradient-to-br from-indigo-50 to-blue-100">
+	<div>
 		<!-- Modern Header Section -->
 		<section class="bg-white shadow-lg">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -17,6 +18,28 @@ useHead({
 						Admissions <span class="text-indigo-600">2024-25</span>
 					</h1>
 					<div class="w-24 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Hero Section -->
+		<section class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center">
+					<h1 class="text-4xl md:text-6xl font-bold mb-6">
+						Admissions <span class="text-yellow-400">2024-25</span>
+					</h1>
+					<p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+						Join our vibrant community of learners and start your journey towards academic excellence and personal growth
+					</p>
+					<div class="mt-8">
+						<RouterLink to="#apply" class="btn-primary text-lg px-8 py-4 mr-4">
+							Apply Now
+						</RouterLink>
+						<RouterLink to="#courses" class="btn-secondary text-lg px-8 py-4">
+							View Courses
+						</RouterLink>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -99,32 +122,6 @@ useHead({
 								Contact Us for More Information
 							</RouterLink>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-</template>
-
-<template>
-	<div>
-		<!-- Hero Section -->
-		<section class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center">
-					<h1 class="text-4xl md:text-6xl font-bold mb-6">
-						Admissions <span class="text-yellow-400">2024-25</span>
-					</h1>
-					<p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
-						Join our vibrant community of learners and start your journey towards academic excellence and personal growth
-					</p>
-					<div class="mt-8">
-						<RouterLink to="#apply" class="btn-primary text-lg px-8 py-4 mr-4">
-							Apply Now
-						</RouterLink>
-						<RouterLink to="#courses" class="btn-secondary text-lg px-8 py-4">
-							View Courses
-						</RouterLink>
 					</div>
 				</div>
 			</div>
