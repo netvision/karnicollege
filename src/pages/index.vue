@@ -2,7 +2,7 @@
 import slide from '@/assets/slide1.jpg';
 import slide2 from '@/assets/slide2.jpg';
 import slide3 from '@/assets/slide3.jpg';
-import slide4 from '@/assets/slide4.jpg';
+import slide5 from '@/assets/slide5.jpg';
 import { useHead } from '@unhead/vue';
 
 useHead({
@@ -61,7 +61,7 @@ onMounted(async () => {
 						data-twe-target="#carouselExampleCaptions"
 						data-twe-slide-to="3"
 						class="mx-2 box-content h-3 w-3 rounded-full bg-white bg-opacity-60 border-0 cursor-pointer transition-all duration-300 hover:bg-white hover:scale-110"
-						aria-label="Slide 4"
+						aria-label="Slide 5"
 					></button>
 				</div>
 
@@ -135,7 +135,7 @@ onMounted(async () => {
 						style="backface-visibility: hidden"
 					>
 						<div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent z-10"></div>
-						<img :src="slide4" class="block w-full h-full object-cover" alt="Future Leaders" />
+						<img :src="slide5" class="block w-full h-full object-cover" alt="Future Leaders" />
 						<div class="absolute inset-x-[10%] md:inset-x-[15%] bottom-8 md:bottom-12 z-20">
 							<div class="text-center text-white">
 								<h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-orange-300 [text-shadow:_2px_2px_4px_rgb(0_0_0_/_80%)]">

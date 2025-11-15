@@ -8,10 +8,13 @@ import ph6 from '@/assets/ph6.jpg'
 import ph7 from '@/assets/ph7.jpg'
 import ph8 from '@/assets/ph8.jpg'
 import ph10 from '@/assets/ph10.jpg'
+import ph11 from '@/assets/ph11.jpeg'
+import ph12 from '@/assets/ph12.jpeg'
+import ph13 from '@/assets/ph13.jpeg'
+import ph14 from '@/assets/ph14.jpeg'
 import slide1 from '@/assets/slide1.jpg'
 import slide2 from '@/assets/slide2.jpg'
 import slide3 from '@/assets/slide3.jpg'
-import slide4 from '@/assets/slide4.jpg'
 import slide5 from '@/assets/slide5.jpg'
 import { useHead } from '@unhead/vue'
 
@@ -135,6 +138,46 @@ useHead({
 							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 						</div>
 					</div>
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph11"
+								alt="College Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph12"
+								alt="College Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph13"
+								alt="College Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
+					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+						<div class="relative overflow-hidden">
+							<img
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+								:src="ph14"
+								alt="College Activities"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</div>
+					</div>
 
 					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
 						<div class="relative overflow-hidden">
@@ -164,17 +207,6 @@ useHead({
 								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
 								:src="slide3"
 								alt="College Activities"
-							/>
-							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-						</div>
-					</div>
-
-					<div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-						<div class="relative overflow-hidden">
-							<img
-								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-								:src="slide4"
-								alt="College Campus"
 							/>
 							<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 						</div>
